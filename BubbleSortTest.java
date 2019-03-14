@@ -20,7 +20,7 @@ public class BubbleSortTest {
 		 int id = 0;
 		 Random rand = new Random();
 		 while (id < 10000){
-			lists.add(new PaymentObject(id++, rand.nextInt(10000), timestamp.getTime()+rand.nextInt(1000)));
+			lists.add(new PaymentObject(id++, rand.nextInt(1000), timestamp.getTime()+rand.nextInt(1000)));
 		 }   
 		 // SortUtil.shuffle(lists);
 	}
