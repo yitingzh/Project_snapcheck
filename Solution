@@ -17,17 +17,17 @@ public class Solution {
 		 }   
 
 		   
-		 // =========================================================================			   
+	     // =========================================================================			   
 	     // Bubble Sort
 			 SortUtil.bubbleSort(lists);
 			 System.out.println("BubbleSort completed, and confirmed :" + SortUtil.verify(lists));
 		
-		 // Shuffle
+	    // Shuffle
 			 SortUtil.shuffle(lists);
 			   
-	   // Merge Sort
+	    // Merge Sort
 			 SortUtil.mergeSort(lists, 0, lists.size()-1);
 			 System.out.println("MergeSort completed, and confirmed :" + SortUtil.verify(lists)); 
-		   // SortUtil.print(lists);
+	    // SortUtil.print(lists);
 	   }
 }
