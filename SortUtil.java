@@ -1,10 +1,13 @@
+package snapcheck_payment_sorting;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
 public class SortUtil {
-	   public static void bubbleSort(List<PaymentObject> lists){
+	
+	   public static List<PaymentObject> bubbleSort(List<PaymentObject> lists){
 	        int len = lists.size();
 	        for(int i = 0; i < len -1; i++){
 	            for (int j = 0; j < len - i - 1; j++){
@@ -13,15 +16,17 @@ public class SortUtil {
 	                }
 	            }
 	        }
+	        return lists;
 	   }
 	   
-	   public static void mergeSort(List<PaymentObject> lists, int st, int end){
-	        if (st >= end) return;
+	   public static List<PaymentObject> mergeSort(List<PaymentObject> lists, int st, int end){
+	        if (st >= end) return lists;
 	        int mid = st + (end - st)/2;
 	        mergeSort(lists, st, mid);
 	        mergeSort(lists, mid+1, end);
 	        
 	        merge(lists, st, mid, end);
+	        return lists;
 	   }
 	   
 	   private static void merge(List<PaymentObject> lists, int st, int mid, int end){
@@ -70,3 +75,4 @@ public class SortUtil {
 		   }
 	   }
 }
+
