@@ -1,3 +1,4 @@
+package snapcheck_payment_sorting;
 
 public class PaymentObject {
 	int paymentNumber;
@@ -9,4 +10,5 @@ public class PaymentObject {
 	    this.amount = amount;
 	    this.date = time;
 	}
+	   
 }
